@@ -9,8 +9,7 @@ from django.core.management import execute_manager, setup_environ
 from django.template.defaultfilters import striptags
 from djblets.util.filesystem import is_exe_in_path
 
-# Add the parent directory of 'manage.py' to the python path, so manage.py can
-# be run from any directory.  From http://www.djangosnippets.org/snippets/281/
+
 sys.path.insert(0, dirname(dirname(abspath(__file__))))
 
 try:
